@@ -1,5 +1,45 @@
-pokemons{
-    text-align: center;
-    margin-top: 0px;
 
-};
+.pk{
+    text-align: center;
+    margin-top: -3500px;
+    font-size: 30px;
+}
+
+.botoes{
+    margin-left: -40px;
+    font-size: 20px;
+    text-align: center;
+    border: 0px;
+    border-radius: 10px;
+    background-color: #dadada;
+    width: 53%;
+
+}
+
+
+.nome{
+    font-size: 60px;
+    font-style: oblique;
+}
+
+img{
+    height: 150px;
+}
+
+.pokemon{
+    font-size: 20px;
+    image-resolution: 50px;
+    pointer-events:visibleFill;
+    text-size-adjust:inherit;
+
+
+}
+
+.listar{
+    font-size: 20px;
+    text-align: center;
+    border: 0px;
+    border-radius: 10px;
+    background-color: #dadada;
+    width: 100%;
+}

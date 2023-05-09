@@ -1,19 +1,24 @@
-<button (click) = "listarTudo()">Lista</button>
+<button class="listar" (click) = "listarTudo()">Lista</button>
 <ul class ="pokemon">
+    
+        <button class = "botoes" (click)  = "paginaanterior()"> Anterior</button>
+        <button class = "botoes" (click) = "proximapagina()"> Próximo</button>
+    
 <li *ngFor="let item of lista"> 
 <div (click) = "pegarpokemon(item.name)">
         <span class="badge">{{item.name}}</span><br>
         <img [src]="item.imagem"> 
 </div>
 </li>
-<button (click) = "paginaanterior()"> Anterior</button>
-<button (click) = "proximapagina()"> Próximo</button>
 
-<div class="pokemons"*ngIf="pokemon">
-    <span>{{pokemon.name}}</span>
-    <img [src]="pokemon.sprites.front_default">
-    <span>ID: {{pokemon.id}}</span><br>
-    <span>{{pokemon.height}}</span><br>
-    <span>{{pokemon.weight}}</span><br>
-</div>
+
 </ul>
+<div class="pk" *ngIf="pokemon">
+    
+    <span class="nome">{{pokemon.name}}</span><br>
+    <img [src]="pokemon.sprites.front_default"><br>
+    <span>ID: {{pokemon.id}}</span><br>
+    <span>Tamanho: {{pokemon.height / 10}} Metros</span><br>
+    <span>Peso: {{pokemon.weight / 10}} Kg</span><br>
+    <span> Experiência: {{pokemon.base_experience}}</span>
+</div>
